@@ -39,7 +39,7 @@ export default function ContactForm() {
 
   if (status === "sent") {
     return (
-      <div className="rounded-[1.75rem] bg-sand p-8" role="status">
+      <div className="rounded-2xl bg-sand p-8" role="status">
         <p className="font-display text-2xl">Thank you, your note is on its way.</p>
         <p className="mt-2 text-muted">We answer every message within two business days.</p>
       </div>

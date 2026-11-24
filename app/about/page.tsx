@@ -26,7 +26,7 @@ export default function AboutPage() {
     <div className="mx-auto max-w-7xl px-5 pt-12 sm:px-8 lg:pt-16">
       <p className="eyebrow">Our story</p>
       <h1 className="mt-3 max-w-4xl font-display text-5xl leading-[1.02] tracking-tight sm:text-7xl">
-        We make the things we wanted to <em className="text-accent">keep</em>.
+        We make the things we wanted to keep
       </h1>
       <div className="mt-10 grid gap-10 text-lg leading-relaxed text-muted md:grid-cols-2">
         <p>
@@ -47,7 +47,7 @@ export default function AboutPage() {
         </h2>
         <ol className="mt-8 grid gap-6 md:grid-cols-4">
           {timeline.map((t) => (
-            <li key={t.year} className="rounded-[1.5rem] border border-line p-6">
+            <li key={t.year} className="rounded-2xl border border-line p-6">
               <p className="font-display text-4xl text-accent">{t.year}</p>
               <p className="mt-3 text-muted">{t.text}</p>
             </li>
@@ -73,15 +73,15 @@ export default function AboutPage() {
                   .map((n) => n[0])
                   .join("")}
               </div>
-              <p className="mt-4 text-lg font-semibold">{m.name}</p>
+              <p className="mt-4 text-lg font-medium">{m.name}</p>
               <p className="text-muted">{m.role}</p>
             </li>
           ))}
         </ul>
       </section>
 
-      <div className="mt-20 flex flex-wrap items-center justify-between gap-6 rounded-[2rem] bg-sand px-8 py-10">
-        <p className="font-display text-2xl sm:text-3xl">Come and see the kiln in person.</p>
+      <div className="mt-20 flex flex-wrap items-center justify-between gap-6 rounded-3xl bg-sand px-8 py-10">
+        <p className="font-display text-2xl sm:text-3xl">Come and see the kiln in person</p>
         <Link href="/contact/" className="btn-primary">
           Book a studio visit
         </Link>

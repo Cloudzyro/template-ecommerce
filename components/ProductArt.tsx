@@ -232,7 +232,6 @@ export default function ProductArt({ kind, color, background, id, label, classNa
         </radialGradient>
       </defs>
       <rect width="400" height="500" fill={`url(#${id}-bg)`} />
-      <circle cx="300" cy="140" r="96" fill="#fff" opacity="0.28" />
       <rect y="420" width="400" height="80" fill="#000" opacity="0.05" />
       <ellipse cx="200" cy="424" rx="150" ry="14" fill="#000" opacity="0.12" />
       <Behind kind={kind} color={color} />

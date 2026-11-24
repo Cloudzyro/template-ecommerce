@@ -18,7 +18,7 @@ export default function Footer() {
         </div>
         {site.footer.columns.map((col) => (
           <div key={col.title}>
-            <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-paper/60">{col.title}</h2>
+            <h2 className="text-sm font-medium text-paper/60">{col.title}</h2>
             <ul className="mt-4 space-y-2">
               {col.links.map((link) => (
                 <li key={link.label}>

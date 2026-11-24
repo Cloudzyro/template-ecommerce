@@ -92,7 +92,7 @@ export default function CartDrawer() {
 
         {items.length === 0 ? (
           <div className="flex flex-1 flex-col items-center justify-center gap-4 px-6 text-center">
-            <p className="font-display text-xl">Your bag is empty.</p>
+            <p className="font-display text-xl">Your bag is empty</p>
             <p className="text-muted">Have a look around, there's a fresh batch of mugs this week.</p>
             <Link href="/shop/" onClick={close} className="btn-primary mt-2">
               Browse the shop
@@ -123,10 +123,10 @@ export default function CartDrawer() {
                       {[item.color, item.size].filter(Boolean).join(", ") || "One option"}
                     </p>
                     <div className="mt-3 flex items-center gap-3">
-                      <div className="flex items-center rounded-full border border-line">
+                      <div className="flex items-center rounded-lg border border-line">
                         <button
                           type="button"
-                          className="h-8 w-8 rounded-full hover:bg-sand"
+                          className="h-8 w-8 rounded-md hover:bg-sand"
                           onClick={() => setQuantity(item.key, item.quantity - 1)}
                           aria-label={`One fewer ${item.name}`}
                         >
@@ -137,7 +137,7 @@ export default function CartDrawer() {
                         </span>
                         <button
                           type="button"
-                          className="h-8 w-8 rounded-full hover:bg-sand"
+                          className="h-8 w-8 rounded-md hover:bg-sand"
                           onClick={() => setQuantity(item.key, item.quantity + 1)}
                           aria-label={`One more ${item.name}`}
                         >
@@ -154,7 +154,7 @@ export default function CartDrawer() {
                       {!checkoutUrl && (
                         <a
                           href={item.paymentLink}
-                          className="ml-auto rounded-full bg-accent px-3 py-1.5 text-sm font-medium text-white hover:brightness-110"
+                          className="ml-auto rounded-lg bg-accent px-3 py-1.5 text-sm font-medium text-white hover:brightness-110"
                         >
                           Pay for this
                         </a>

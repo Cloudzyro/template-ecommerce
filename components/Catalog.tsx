@@ -71,7 +71,7 @@ export default function Catalog({
               type="button"
               aria-pressed={category === t.slug}
               onClick={() => chooseCategory(t.slug)}
-              className={`rounded-full border px-4 py-2 text-sm transition-colors ${
+              className={`rounded-lg border px-4 py-2 text-sm transition-colors ${
                 category === t.slug
                   ? "border-ink bg-ink text-paper"
                   : "border-line hover:border-ink"
@@ -92,7 +92,7 @@ export default function Catalog({
               type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search mugs, linen, fig..."
+              placeholder="Search"
               className="field w-full pl-10 sm:w-64"
             />
           </label>
@@ -117,8 +117,8 @@ export default function Catalog({
       </p>
 
       {results.length === 0 ? (
-        <div className="mt-6 rounded-[1.75rem] border border-dashed border-line px-6 py-16 text-center">
-          <p className="font-display text-2xl">Nothing matches that just yet.</p>
+        <div className="mt-6 rounded-2xl border border-dashed border-line px-6 py-16 text-center">
+          <p className="font-display text-2xl">Nothing matches that just yet</p>
           <button
             type="button"
             className="mt-4 text-accent underline underline-offset-4"

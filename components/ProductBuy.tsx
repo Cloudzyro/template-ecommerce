@@ -16,7 +16,7 @@ export default function ProductBuy({ product }: { product: Product }) {
   return (
     <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-16">
       <div>
-        <div className="overflow-hidden rounded-[2rem] bg-sand">
+        <div className="overflow-hidden rounded-3xl bg-sand">
           <ProductArt
             kind={product.art}
             color={color.hex}
@@ -35,7 +35,7 @@ export default function ProductBuy({ product }: { product: Product }) {
                   onClick={() => setColorIndex(i)}
                   aria-label={`Show ${c.name}`}
                   aria-current={i === colorIndex}
-                  className={`block w-full overflow-hidden rounded-2xl border-2 transition ${
+                  className={`block w-full overflow-hidden rounded-xl border-2 transition-[border-color,opacity] ${
                     i === colorIndex ? "border-ink" : "border-transparent opacity-80 hover:opacity-100"
                   }`}
                 >
@@ -56,7 +56,7 @@ export default function ProductBuy({ product }: { product: Product }) {
 
       <div className="lg:pt-6">
         {product.badge && (
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">{product.badge}</p>
+          <p className="text-sm font-medium text-accent">{product.badge}</p>
         )}
         <h1 className="mt-2 font-display text-4xl leading-tight sm:text-5xl">{product.name}</h1>
         <p className="mt-4 text-2xl tabular-nums">
@@ -106,7 +106,7 @@ export default function ProductBuy({ product }: { product: Product }) {
                     onChange={() => setSize(s)}
                     className="peer sr-only"
                   />
-                  <span className="block rounded-full border border-line px-4 py-2 text-sm peer-checked:border-ink peer-checked:bg-ink peer-checked:text-paper peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-accent">
+                  <span className="block rounded-lg border border-line px-4 py-2 text-sm peer-checked:border-ink peer-checked:bg-ink peer-checked:text-paper peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-accent">
                     {s}
                   </span>
                 </label>
@@ -116,10 +116,10 @@ export default function ProductBuy({ product }: { product: Product }) {
         )}
 
         <div className="mt-8 flex flex-wrap items-center gap-3">
-          <div className="flex items-center rounded-full border border-line">
+          <div className="flex items-center rounded-[10px] border border-line">
             <button
               type="button"
-              className="h-12 w-12 rounded-full text-lg hover:bg-sand"
+              className="h-12 w-12 rounded-lg text-lg hover:bg-sand"
               onClick={() => setQuantity((q) => Math.max(1, q - 1))}
               aria-label="Decrease quantity"
             >
@@ -130,7 +130,7 @@ export default function ProductBuy({ product }: { product: Product }) {
             </span>
             <button
               type="button"
-              className="h-12 w-12 rounded-full text-lg hover:bg-sand"
+              className="h-12 w-12 rounded-lg text-lg hover:bg-sand"
               onClick={() => setQuantity((q) => Math.min(99, q + 1))}
               aria-label="Increase quantity"
             >

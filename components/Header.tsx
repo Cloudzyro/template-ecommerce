@@ -28,7 +28,7 @@ export default function Header() {
             )}
           </svg>
         </button>
-        <Link href="/" className="font-display text-2xl font-semibold tracking-tight">
+        <Link href="/" className="font-display text-2xl font-medium tracking-tight">
           {site.name}
           <span className="text-accent">.</span>
         </Link>
@@ -46,7 +46,7 @@ export default function Header() {
         <button
           type="button"
           onClick={open}
-          className="ml-auto flex items-center gap-2 rounded-full border border-line px-4 py-2 text-sm hover:border-ink"
+          className="ml-auto flex items-center gap-2 rounded-[10px] border border-line px-4 py-2 text-sm transition-colors hover:border-ink"
           aria-label={`Open bag, ${count} ${count === 1 ? "item" : "items"}`}
         >
           <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">

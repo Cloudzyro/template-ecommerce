@@ -3,7 +3,7 @@
 
 export const site = {
   name: "Slowfold",
-  tagline: "Objects made slowly, for rooms that are lived in.",
+  tagline: "Objects made slowly, for rooms that are lived in",
   description:
     "Slowfold is a small home goods studio making stoneware, linen and hand-poured candles in short, careful batches.",
   // Your live address, used for the sitemap and social previews.

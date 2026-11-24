@@ -63,12 +63,12 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    border-radius: 9999px;
+    border-radius: 10px;
     background: var(--ink);
     color: var(--paper);
     padding: 0.85rem 1.6rem;
-    font-weight: 600;
-    transition: background-color 0.2s, transform 0.2s;
+    font-weight: 500;
+    transition: background-color 0.16s cubic-bezier(0.22, 1, 0.36, 1), color 0.16s cubic-bezier(0.22, 1, 0.36, 1);
   }
   .btn-primary:hover {
     background: var(--accent);
@@ -81,18 +81,18 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    border-radius: 9999px;
+    border-radius: 10px;
     border: 1px solid var(--ink);
     padding: 0.8rem 1.6rem;
-    font-weight: 600;
-    transition: background-color 0.2s, color 0.2s;
+    font-weight: 500;
+    transition: background-color 0.16s cubic-bezier(0.22, 1, 0.36, 1), color 0.16s cubic-bezier(0.22, 1, 0.36, 1);
   }
   .btn-secondary:hover {
     background: var(--ink);
     color: var(--paper);
   }
   .field {
-    border-radius: 1rem;
+    border-radius: 10px;
     border: 1px solid var(--line);
     background: var(--paper);
     padding: 0.7rem 1rem;
@@ -117,16 +117,14 @@ body {
     background: currentColor;
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform 0.25s ease;
+    transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
   }
   .nav-link:hover::after {
     transform: scaleX(1);
   }
   .eyebrow {
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 500;
     color: var(--accent);
   }
 }

@@ -53,7 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             Skip to content
           </a>
           {site.announcement && (
-            <p className="bg-moss px-4 py-2 text-center text-xs font-medium tracking-wide text-paper sm:text-sm dark:text-[#191612]">
+            <p className="bg-moss px-4 py-2 text-center text-xs font-medium text-paper sm:text-sm dark:text-[#191612]">
               {site.announcement}
             </p>
           )}
